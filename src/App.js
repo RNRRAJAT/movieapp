@@ -13,7 +13,7 @@ const App=()=> {
   useEffect(() => {
     searchMovies("Batman");
     console.log(movies);
-    // load();
+    
   }, []);
 
   const load=async()=>{
