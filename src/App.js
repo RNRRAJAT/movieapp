@@ -40,12 +40,12 @@ const App=()=> {
       if (data.Response === "True") {
         setMovies(data.Search);
       } else {
-        setMovies([]); // or show error message
+        setMovies([]); 
         console.error("API Error:", data.Error);
       }
     } catch (error) {
       console.error("Fetch Error:", error);
-      setMovies([]); // handle gracefully
+      setMovies([]); 
     }
   };
   
